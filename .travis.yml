@@ -3,10 +3,10 @@ language: generic
 services:
   - docker 
 before_install:
-  - docker build -t srikanthdevarampati/Docker-react -f Dockerfile.dev . 
+  - docker build -t srikanthdevarampati/docker-react -f Dockerfile.dev . 
 
 script:
-  - docker run -e CI=true srikanthdevarampati/Docker-react npm run test
+  - docker run -e CI=true srikanthdevarampati/docker-react npm run test
 
 
    
